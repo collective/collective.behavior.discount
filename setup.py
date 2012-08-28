@@ -26,7 +26,7 @@ setup(
     keywords='',
     author='Taito Horiuchi',
     author_email='taito.horiuchi@gmail.com',
-    url='http://svn.plone.org/svn/collective/',
+    url='https://github.com/collective/collective.behavior.discount/',
     license='BSD',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective', 'collective.behavior'],
