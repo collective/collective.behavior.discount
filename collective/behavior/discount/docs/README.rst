@@ -1,15 +1,29 @@
-======================
+============================
 collective.behavior.discount
-======================
+============================
 
-collective.behavior.discount provides bahavior to dexterity content types related to discounts.
+collective.behavior.discount provides discount related behavior in addition to price behavior to dexterity content types.
 
-Tested with
------------
+For farther documentation about price behavior, refer to the `collective.behavior.price
+<http://pypi.python.org/pypi/collective.behavior.price>`_.
+
+Currently tested with
+---------------------
 
 * Plone-4.2.1 [taito]
 
-Further Documentation URL
+Behavior
+--------
+
+The behavior can be added through the web or directly through the file system to the dexterity content type xml file like::
+
+    <property name="behaviors">
+      ...
+      <element value="collective.behavior.discount.interfaces.IDiscount" />
+      ...
+    </property>
+
+Farther Documentation URL
 -------------------------
 
 `http://packages.python.org/collective.behavior.discount/
