@@ -21,9 +21,7 @@ class TestSetup(IntegrationTestCase):
         setup = getToolByName(self.portal, 'portal_setup')
         self.assertEqual(
             setup.getVersionForProfile(
-                'profile-collective.behavior.discount:default'),
-            u'0'
-        )
+                'profile-collective.behavior.discount:default'), u'0')
 
     def test_uninstall__package(self):
         installer = getToolByName(self.portal, 'portal_quickinstaller')

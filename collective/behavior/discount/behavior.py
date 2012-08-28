@@ -2,14 +2,8 @@ from collective.behavior.discount.interfaces import IDiscount
 from collective.behavior.price.behavior import Price
 from datetime import date
 from plone.directives import form
-from rwproperty import getproperty
-from rwproperty import setproperty
 from zope.interface import alsoProvides
 from zope.interface import implements
-
-import logging
-
-logger = logging.getLogger(__name__)
 
 
 alsoProvides(IDiscount, form.IFormFieldProvider)
@@ -20,11 +14,11 @@ class Discount(Price):
     """
     implements(IDiscount)
 
-    @getproperty
+    @property
     def discount_enabled(self):
         return getattr(self.context, 'discount_enabled', False)
 
-    @setproperty
+    @discount_enabled.setter
     def discount_enabled(self, value):
         """Set discount_enabled as Boolean
 
@@ -36,11 +30,11 @@ class Discount(Price):
                 raise ValueError('Not Bool')
         setattr(self.context, 'discount_enabled', value)
 
-    @getproperty
+    @property
     def discount_price(self):
         return getattr(self.context, 'discount_price', None)
 
-    @setproperty
+    @discount_price.setter
     def discount_price(self, value):
         """Setting discount_price as Decimal and discount_money as Money.
 
@@ -49,11 +43,11 @@ class Discount(Price):
         """
         self._set_price(value, name='discount_')
 
-    @getproperty
+    @property
     def discount_money(self):
         return getattr(self.context, 'discount_money', None)
 
-    @setproperty
+    @discount_money.setter
     def discount_money(self, value):
         """Setting discount_money as Money.
 
@@ -62,7 +56,7 @@ class Discount(Price):
         """
         self._set_money(value, name='discount_')
 
-    @getproperty
+    @property
     def discount_start(self):
         return getattr(self.context, 'discount_start', None)
 
@@ -80,7 +74,7 @@ class Discount(Price):
         else:
             raise ValueError('Not datetime.date.')
 
-    @setproperty
+    @discount_start.setter
     def discount_start(self, value):
         """Setting discount_start as datetime.date.
 
@@ -89,11 +83,11 @@ class Discount(Price):
         """
         self._set_date(value, 'discount_start')
 
-    @getproperty
+    @property
     def discount_end(self):
         return getattr(self.context, 'discount_end', None)
 
-    @setproperty
+    @discount_end.setter
     def discount_end(self, value):
         """Setting discount_end as datetime.date.
 
