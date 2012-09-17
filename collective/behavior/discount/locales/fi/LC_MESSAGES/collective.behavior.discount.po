@@ -1,10 +1,7 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-09-17 08:07+0000\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,25 +12,21 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.behavior.discount\n"
-
-#: ./interfaces.py:21
-msgid ""
-msgstr ""
+"Domain: DOMAIN\n"
 
 #: ./interfaces.py:12
 msgid "Discount Enabled"
-msgstr ""
+msgstr "Alennus voimassa"
 
 #: ./interfaces.py:25
 msgid "Discount End Date"
-msgstr ""
+msgstr "Alennuksen päättymispäivä"
 
 #: ./interfaces.py:16
 msgid "Discount Price"
-msgstr ""
+msgstr "Alennushinta"
 
 #: ./interfaces.py:20
 msgid "Discount Start Date"
-msgstr ""
+msgstr "Alennuksen alkamispäivä"
 
