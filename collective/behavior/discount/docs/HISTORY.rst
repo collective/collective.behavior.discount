@@ -1,10 +1,10 @@
 Change log
 ----------
 
-0.2.1 (2012-09-XX)
+0.2.1 (2012-09-24)
 ==================
 
-- Finnish translations updated. [taito]
+- Updated schema to include vat. [taito]
 
 0.2 (2012-09-17)
 ================
