@@ -30,6 +30,19 @@ class TestIDiscount(unittest.TestCase):
         schema = self.get_schema('discount_enabled')
         self.assertFalse(schema.default)
 
+    def test_price__instance(self):
+        schema = self.get_schema('price')
+        from zope.schema import Decimal
+        self.assertIsInstance(schema, Decimal)
+
+    def test_price__title(self):
+        schema = self.get_schema('price')
+        self.assertEqual(schema.title, u'Price including VAT')
+
+    def test_price__required(self):
+        schema = self.get_schema('price')
+        self.assertTrue(schema.required)
+
     def test_discount_price__instance(self):
         schema = self.get_schema('discount_price')
         from zope.schema import Decimal
@@ -37,7 +50,7 @@ class TestIDiscount(unittest.TestCase):
 
     def test_discount_price__title(self):
         schema = self.get_schema('discount_price')
-        self.assertEqual(schema.title, u'Discount Price')
+        self.assertEqual(schema.title, u'Discount Price including VAT')
 
     def test_discount_price__required(self):
         schema = self.get_schema('discount_price')
