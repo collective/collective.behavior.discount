@@ -119,6 +119,13 @@ class TestDiscount(unittest.TestCase):
         instance.discount_money = discount_money
         self.assertEqual(instance.discount_money, discount_money)
 
+    def test_instance__set_date__None(self):
+        context = mock.Mock()
+        day = context.DAY
+        instance = self.create_instance(context=context)
+        instance._set_date(None, 'DAY')
+        self.assertEqual(instance.context.DAY, day)
+
     def test_instance___set_date(self):
         context = mock.Mock()
         instance = self.create_instance(context=context)

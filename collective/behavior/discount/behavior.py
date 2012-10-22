@@ -69,10 +69,11 @@ class Discount(Price):
         :param name: Name of field.
         :type name: str
         """
-        if isinstance(value, date):
-            setattr(self.context, name, value)
-        else:
-            raise ValueError('Not datetime.date.')
+        if value is not None:
+            if isinstance(value, date):
+                setattr(self.context, name, value)
+            else:
+                raise ValueError('Not datetime.date.')
 
     @discount_start.setter
     def discount_start(self, value):
