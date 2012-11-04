@@ -1,6 +1,12 @@
 Change log
 ----------
 
+0.2.2 (2012-11-04)
+==================
+
+- Updated method: _set_date to cover edge case when value is None. [taito]
+- Tested with Plone-4.2.2. [taito]
+
 0.2.1 (2012-09-24)
 ==================
 

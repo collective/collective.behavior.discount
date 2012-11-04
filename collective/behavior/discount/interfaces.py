@@ -9,8 +9,8 @@ class IDiscount(IPrice):
     """Interface for Discount behavior."""
 
     price = Decimal(
-            title=_(u"Price including VAT"),
-            required=True)
+        title=_(u"Price including VAT"),
+        required=True)
 
     discount_enabled = Bool(
         title=_(u"Discount Enabled"),
