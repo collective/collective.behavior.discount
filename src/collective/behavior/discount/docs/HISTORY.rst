@@ -1,5 +1,13 @@
-Change log
-----------
+Changelog
+---------
+
+0.2.2.1 (2013-04-16)
+====================
+
+- Moved test packages to extras_require. [taito]
+- Removed dependency from five.grok. [taito]
+- Tested with Plone-4.3. [taito]
+- Added Travis CI integration. [taito]
 
 0.2.2 (2012-11-04)
 ==================

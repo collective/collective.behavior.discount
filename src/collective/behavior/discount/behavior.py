@@ -1,17 +1,17 @@
 from collective.behavior.discount.interfaces import IDiscount
 from collective.behavior.price.behavior import Price
 from datetime import date
-from plone.directives import form
+from plone.autoform.interfaces import IFormFieldProvider
 from zope.interface import alsoProvides
 from zope.interface import implements
 
 
-alsoProvides(IDiscount, form.IFormFieldProvider)
+alsoProvides(IDiscount, IFormFieldProvider)
 
 
 class Discount(Price):
-    """
-    """
+    """Behavior to add discount to content types"""
+
     implements(IDiscount)
 
     @property
