@@ -1,11 +1,10 @@
 from collective.behavior.discount import _
-from collective.behavior.discount.schema import DiscountSchema
-from collective.behavior.price.interfaces import IPrice
+from collective.behavior.price.schema import PriceSchema
 from zope import schema
 
 
-class IDiscount(DiscountSchema, IPrice):
-    """Interface for behavior: Discount"""
+class DiscountSchema(PriceSchema):
+    """Schema for behavior: Discount"""
 
     price = schema.Decimal(
         title=_(u"Price including VAT"),
