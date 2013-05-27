@@ -18,9 +18,11 @@ class Discount(Price):
     def discount_enabled(self):
         return getattr(self.context, 'discount_enabled', False)
 
-    @discount_enabled.setter
-    def discount_enabled(self, value):
-        """Set discount_enabled as Boolean
+    def _set_bool(self, name, value):
+        """Set attribute: name as Boolean
+
+        :param name: Attribute name
+        :type name: str
 
         :param value: True or False
         :type value: bool
@@ -28,7 +30,16 @@ class Discount(Price):
         if value is not True:
             if value is not False:
                 raise ValueError('Not Bool')
-        setattr(self.context, 'discount_enabled', value)
+        setattr(self.context, name, value)
+
+    @discount_enabled.setter
+    def discount_enabled(self, value):
+        """Set discount_enabled as Boolean
+
+        :param value: True or False
+        :type value: bool
+        """
+        self._set_bool('discount_enabled', value)
 
     @property
     def discount_price(self):
@@ -45,7 +56,7 @@ class Discount(Price):
 
     @property
     def discount_money(self):
-        return getattr(self.context, 'discount_money', None)
+        return self._get_money('discount_')
 
     @discount_money.setter
     def discount_money(self, value):

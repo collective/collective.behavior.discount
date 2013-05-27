@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-09-24 18:18+0000\n"
+"POT-Creation-Date: 2013-05-27 06:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.behavior.discount\n"
 
-#: ./interfaces.py:25
+#: ./schema.py:23
 msgid ""
 msgstr ""
 
-#: ./interfaces.py:16
+#: ./schema.py:14
 msgid "Discount Enabled"
 msgstr ""
 
-#: ./interfaces.py:29
+#: ./schema.py:27
 msgid "Discount End Date"
 msgstr ""
 
-#: ./interfaces.py:20
+#: ./schema.py:18
 msgid "Discount Price including VAT"
 msgstr ""
 
-#: ./interfaces.py:24
+#: ./schema.py:22
 msgid "Discount Start Date"
 msgstr ""
 
-#: ./interfaces.py:12
+#: ./schema.py:10
 msgid "Price including VAT"
 msgstr ""
 

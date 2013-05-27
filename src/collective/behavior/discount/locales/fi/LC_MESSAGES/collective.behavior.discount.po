@@ -14,22 +14,23 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./interfaces.py:16
+#: ./schema.py:14
 msgid "Discount Enabled"
 msgstr "Alennus voimassa"
 
-#: ./interfaces.py:29
+#: ./schema.py:27
 msgid "Discount End Date"
 msgstr "Alennuksen päättymispäivä"
 
-#: ./interfaces.py:20
+#: ./schema.py:18
 msgid "Discount Price including VAT"
 msgstr "Alennushinta sis. ALV"
 
-#: ./interfaces.py:24
+#: ./schema.py:22
 msgid "Discount Start Date"
 msgstr "Alennuksen alkamispäivä"
 
-#: ./interfaces.py:12
+#: ./schema.py:10
 msgid "Price including VAT"
 msgstr "Hinta sis. ALV"
+
