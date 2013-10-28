@@ -1,44 +1,30 @@
 Changelog
 ---------
 
-0.2.2.4 (2013-05-27)
-====================
+0.3 (2013-10-28)
+================
 
-- Added helper method: _set_bool. [taito]
-
-0.2.2.3 (2013-04-17)
-====================
-
-- Cosmetics. [taito]
-
-0.2.2.2 (2013-04-17)
-====================
-
-- Separated schema from attributes and methods. [taito]
-
-0.2.2.1 (2013-04-16)
-====================
-
-- Moved test packages to extras_require. [taito]
-- Removed dependency from five.grok. [taito]
-- Tested with Plone-4.3. [taito]
-- Added Travis CI integration. [taito]
+- Separate schema from attributes and methods. [taito]
+- Move test packages to extras_require. [taito]
+- Remove dependency from five.grok. [taito]
+- Test with Plone-4.3.2. [taito]
+- Add Travis CI integration. [taito]
 
 0.2.2 (2012-11-04)
 ==================
 
-- Updated method: _set_date to cover edge case when value is None. [taito]
-- Tested with Plone-4.2.2. [taito]
+- Update method: _set_date to cover edge case when value is None. [taito]
+- Test with Plone-4.2.2. [taito]
 
 0.2.1 (2012-09-24)
 ==================
 
-- Updated schema to include vat. [taito]
+- Update schema to include vat. [taito]
 
 0.2 (2012-09-17)
 ================
 
-- Finnish translations added. [taito]
+- Add Finnish translations. [taito]
 
 0.1 (2012-08-28)
 ================
