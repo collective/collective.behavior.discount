@@ -17,7 +17,6 @@ class BehaviorDiscountLayer(PloneSandboxLayer):
         # Load ZCML
         import collective.behavior.discount
         self.loadZCML(package=collective.behavior.discount)
-        z2.installProduct(app, 'collective.behavior.discount')
 
     def setUpPloneSite(self, portal):
         """Set up Plone."""
@@ -26,7 +25,6 @@ class BehaviorDiscountLayer(PloneSandboxLayer):
 
     def tearDownZope(self, app):
         """Tear down Zope."""
-        z2.uninstallProduct(app, 'collective.behavior.discount')
 
 
 FIXTURE = BehaviorDiscountLayer()

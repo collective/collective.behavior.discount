@@ -10,7 +10,7 @@ For farther documentation about price behavior, refer to the `collective.behavio
 Currently tested with
 ---------------------
 
-* Plone-4.3.2 with Python-2.7.x [taito]
+* Plone-4.3.6 with Python-2.7.x [taito]
 
 Behavior
 --------
