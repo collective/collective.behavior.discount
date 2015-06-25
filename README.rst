@@ -4,8 +4,8 @@ collective.behavior.discount
 
 collective.behavior.discount provides discount related behavior in addition to price behavior to dexterity content types.
 
-For farther documentation about price behavior, refer to the `collective.behavior.price
-<http://pypi.python.org/pypi/collective.behavior.price>`_.
+.. image:: https://secure.travis-ci.org/collective/collective.behavior.discount.png
+    :target: http://travis-ci.org/collective/collective.behavior.discount
 
 Currently tested with
 ---------------------
